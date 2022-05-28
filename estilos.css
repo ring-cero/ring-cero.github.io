@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Eczar', serif;
     background-image: url('matrix.jpeg');
     background-position: center;
     background-size: cover;
@@ -8,6 +8,9 @@ body{
 h1,h2{
     color: white;
     text-align: center;
+}
+h1{
+    padding-top: 8rem;
 }
 p{
     color: white;
@@ -17,6 +20,56 @@ section{
     margin: auto;
 }
 p{
-    background-color: #26242499;
+    background-color: #262424CC;
     padding: 1rem;
+    text-align: justify;
+    word-spacing: 0.3rem;
+}
+header{
+    display: flex;
+    background-color: #000000;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    width: 100%;
+
+}
+header img{
+    width: 7%;
+    margin: 0.5rem;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    font-size: 1.3em;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+    font-family: inherit;
+}
+nav{
+    width: 50%;
+}
+nav li:hover{
+    text-decoration: underline;
+}
+article img{
+    float: right;
+    width: 30%;
+    margin: 1rem;
+}
+footer{
+    background-color: black;
+    color: white;
+    margin-bottom: 0;
+}
+footer ul{
+    margin-bottom: 0;
 }

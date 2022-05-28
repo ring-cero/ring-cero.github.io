@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Eczar&display=swap" rel="stylesheet">
     <title>Encriptación</title>
 </head>
 <body>
     <header>
+        <img src="llave.png" alt="">
         <nav>
-            
+            <ul>
+                <li><a href="#definicion">Definición</a></li>
+                <li><a href="#simetrica">Simétrica</a></li>
+                <li><a href="#asimetrica">Asimétrica</a></li>
+                <li><a href="#hibrida">Híbrida</a></li>
+                <li><a href="#enigma">Enigma</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -30,6 +37,7 @@
             <h2>Encriptación simétrica</h2>
             <article>
                 <p>
+                    <img src="publica.png" alt="">
                     La encriptación simétrica se basa en la idea de que tanto el emisor como el receptor usan la misma clave o llave, la cuál sirve tanto para cifrar como para descifrar el mensaje. Esta llave estará compartida entre los dos participantes, por el emisor para cifrar la información y por el receptor para descifrarla. Este tipo de encriptación es más rápido que la encriptación asimétrica, de ahí que se use para cifrar grandes cantidades de datos. Sin embargo, este modelo presenta un gran problema: ya que las dos partes deben compartir la misma llave, en el caso de que los participantes se encuentren en lugares muy distantes, tendrían que compartir la llave por la red, de modo que ésta podría ser interceptada por un atacante y a tomar por culo el cifrado. Para solucionar esta problemática surge la encriptación asimétrica.
 
                 </p>
@@ -44,6 +52,7 @@
             </article>
             <article>
                 <p>
+                    <img src="llaves.png" alt="">
                     Supongamos que Smough quiere enviar a Ornstein un mensaje, y es muy importante que Ornstein tenga la certeza de que ese mensaje ha sido escrito por Smough. Para ello, Smough enviará su clave pública a Ornstein y, una vez haya escrito el mensaje, lo cifrará usando su clave privada. Una vez cifrado, se lo envía a Ornstein quien, usando la llave pública de Smough, lo desencriptará, lo cual significa que ese documento ha sido inequívocamente escrito por Smough, ya que ha podido ser descifrado usando la llave pública de Smough. Esto es lo que se conoce como firma digital, algo muy común hoy día para identificarnos de forma digital para realizar operaciones importantes que no pueden estar sujetas al error en la identificación.
                 </p>
             </article>
@@ -65,6 +74,7 @@
             <h2>Máquina Enigma</h2>
             <article>
                 <p>
+                    <img src="enigma.jpeg" alt="">
                     La máquina Enigma, usada por el ejército nazi para cifrar sus mensajes, es un claro ejemplo de encriptación simétrica. El aspecto de esta máquina era muy similar al de una máquina de escribir, añadiendo al teclado un panel con bombillas para cada letra y tres rotores. Cada vez que se pulsa una letra del teclado, sale de este una señal electromagnética cuyo recorrido es el siguiente: primero, pasa por un panel de conexiones en el cual se unen pares de letras con un cable, pudiendo formar 10 pares en total. Si por ejemplo pulsamos la E y la E está conectada con la M, el primer cifrado sería pasar de E a M. A continuación, la señal viajaría hasta los 3 rotores. En cada uno de estos, que cuentan con 26 letras por cada cara, se producirían dos cambios, uno al entrar y otro al salir. Al salir del tercer rotor, la señal entra a un reflector que genera otros dos cambios antes de hacer el mismo camino a la inversa hasta llegar al panel de bombillas que iluminará la letra resultante del cifrado. En total se producen 15 cambios desde que pulsamos una letra del teclado. El mensaje cifrado resultante es el que los generales nazis comunicaban por medio de radio para informar de ataques o de posiciones estratégicas relevantes. 
                 </p>
             </article>
@@ -75,5 +85,12 @@
             </article>
         </section>
     </main>
+    <footer>
+        <ul>
+            <li>https://infoactualidad.ucm.es/index.php/nosotros/2-uncategorised/638-descifrando-enigma-por-que-alemania-perdio-la-segunda-guerra-mundial</li>
+            <li>https://www.redeszone.net/tutoriales/seguridad/diferencias-cifrado-clave-publica-privada/</li>
+            <li></li>
+        </ul>
+    </footer>
 </body>
 </html>
