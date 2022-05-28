@@ -1,0 +1,22 @@
+body{
+    margin: 0px;
+    font-family: 'Comfortaa', cursive;
+    background-image: url('matrix.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+h1,h2{
+    color: white;
+    text-align: center;
+}
+p{
+    color: white;
+}
+section{
+    width: 70%;
+    margin: auto;
+}
+p{
+    background-color: #26242499;
+    padding: 1rem;
+}

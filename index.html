@@ -4,9 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <title>Encriptación</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            
+        </nav>
+    </header>
+    <main>
+        <h1>Encriptación</h1>
+        <section id="definicion">
+        <h2>¿Qué es la encriptación?</h2>
+        <article>
+            <p>
+                La encriptación es el proceso de cifrar cierta información de manera que solamente las personas autorizadas puedan descifrarla y entenderla. La encriptación garantiza no sólo la confidencialidad de la información, sino también su integridad. A pesar de que esta herramienta se ha desarrollado muchísimo gracias al auge de Internet y de la informática, la criptografía como tal existe desde hace miles de años. El propio imperio romano ya usaba la encriptación para enviar mensajes a sus distintas guarniciones de ejércitos. Existen dos tipos de encriptación: simétrica y asimétrica.
+            </p>
+        </article>
+        </section>
+        <section id="simetrica">
+            <h2>Encriptación simétrica</h2>
+            <article>
+                <p>
+                    La encriptación simétrica se basa en la idea de que tanto el emisor como el receptor usan la misma clave o llave, la cuál sirve tanto para cifrar como para descifrar el mensaje. Esta llave estará compartida entre los dos participantes, por el emisor para cifrar la información y por el receptor para descifrarla. Este tipo de encriptación es más rápido que la encriptación asimétrica, de ahí que se use para cifrar grandes cantidades de datos. Sin embargo, este modelo presenta un gran problema: ya que las dos partes deben compartir la misma llave, en el caso de que los participantes se encuentren en lugares muy distantes, tendrían que compartir la llave por la red, de modo que ésta podría ser interceptada por un atacante y a tomar por culo el cifrado. Para solucionar esta problemática surge la encriptación asimétrica.
+
+                </p>
+            </article>
+        </section>
+        <section id="asimetrica">
+            <h2>Encriptación asimétrica</h2>
+            <article>
+                <p>
+                    En una comunicación entre dos sujetos, ambos tienen sus llaves pública y privada. Si el sujeto 1, llamémosle Ornstein, quiere enviar un mensaje al sujeto 2, llamémosle Smough, lo primero que debe hacer Smough es mandar su llave pública a Ornstein. Una vez Ornstein tenga la llave pública de Smough, la usará para encriptar la información que vaya a enviar. Una vez encriptada, se la enviará a Smough, quien usará su llave privada (recordemos que esta NO se comparte) para desencriptar la información. Como vemos, aunque un atacante pudiera interceptar de primeras la llave pública, no le serviría de nada, puesto que la única manera de desencriptar un documento es usando la llave privada que va a asociada a la llave pública con la que se encriptó. Este es el primer uso de la encriptación asimétrica, cifrar la información. Sin embargo, encontramos un segundo uso; asegurar la integridad y procedencia de los datos.
+                </p>
+            </article>
+            <article>
+                <p>
+                    Supongamos que Smough quiere enviar a Ornstein un mensaje, y es muy importante que Ornstein tenga la certeza de que ese mensaje ha sido escrito por Smough. Para ello, Smough enviará su clave pública a Ornstein y, una vez haya escrito el mensaje, lo cifrará usando su clave privada. Una vez cifrado, se lo envía a Ornstein quien, usando la llave pública de Smough, lo desencriptará, lo cual significa que ese documento ha sido inequívocamente escrito por Smough, ya que ha podido ser descifrado usando la llave pública de Smough. Esto es lo que se conoce como firma digital, algo muy común hoy día para identificarnos de forma digital para realizar operaciones importantes que no pueden estar sujetas al error en la identificación.
+                </p>
+            </article>
+            <article>
+                <p>
+                    La encriptación asimétrica, a pesar de ser más segura que la simétrica, es mucho más lenta a la hora de cifrar los mensajes, además de generar llaves y mensajes cifrados mucho más pesados, por lo que puede no ser ideal para conjuntos de datos muy pesados.
+                </p>
+            </article>
+        </section>
+        <section id="hibrida">
+            <h2>Encriptación híbrida</h2>
+            <article>
+                <p>
+                    Una propuesta para reunir lo mejor de ambos métodos es la encriptación híbrida. En este método, cuando Bob va a enviarle un mensaje a Alice, lo primero que hace es generar una llave simétrica para cifrar su mensaje. Una vez que ha cifrado el mensaje usando la llave simétrica, encripta esta llave que ha generado usando la llave pública de Alice. Una vez hecho esto, le envía a Alice el mensaje y la llave simétrica, ambos encriptados. Cuando Alice los reciba, primero usará su llave privada para desencriptar la llave simétrica para, a continuación, descifrar el mensaje con la llave simétrica. Este método permite aprovechar la seguridad de la criptografía asimétrica y la ligereza y rapidez de la encriptación simétrica.
+                </p>
+            </article>
+        </section>
+        <section id="enigma">
+            <h2>Máquina Enigma</h2>
+            <article>
+                <p>
+                    La máquina Enigma, usada por el ejército nazi para cifrar sus mensajes, es un claro ejemplo de encriptación simétrica. El aspecto de esta máquina era muy similar al de una máquina de escribir, añadiendo al teclado un panel con bombillas para cada letra y tres rotores. Cada vez que se pulsa una letra del teclado, sale de este una señal electromagnética cuyo recorrido es el siguiente: primero, pasa por un panel de conexiones en el cual se unen pares de letras con un cable, pudiendo formar 10 pares en total. Si por ejemplo pulsamos la E y la E está conectada con la M, el primer cifrado sería pasar de E a M. A continuación, la señal viajaría hasta los 3 rotores. En cada uno de estos, que cuentan con 26 letras por cada cara, se producirían dos cambios, uno al entrar y otro al salir. Al salir del tercer rotor, la señal entra a un reflector que genera otros dos cambios antes de hacer el mismo camino a la inversa hasta llegar al panel de bombillas que iluminará la letra resultante del cifrado. En total se producen 15 cambios desde que pulsamos una letra del teclado. El mensaje cifrado resultante es el que los generales nazis comunicaban por medio de radio para informar de ataques o de posiciones estratégicas relevantes. 
+                </p>
+            </article>
+            <article>
+                <p>
+                    Y, ¿cómo descifraban el mensaje? Pues conociendo las conexiones exactas del panel de letras y la posición de los tres rotores, los cuales eran además intercambiables entre sí. La configuración de la máquina estaba planificada para cada día, y además cada mes se alteraban las posiciones de los rotores. Gracias a esto, existían 158 962 555 217 826 distintas combinaciones del alfabeto. ¿Cuál fue el fallo del ejército alemán? La estupidez humana, ya que empezaron a ser erráticos en las claves que usaban para cada día, repitiendo patrones en muchas y ocasiones, además de que terminaban todos sus mensajes con la misma frase, ‘Heil Hitler!’ Gracias a esto, los aliados, encabezados por Alan Turing, consiguieron romper el mecanismo de Enigma. 
+                </p>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
