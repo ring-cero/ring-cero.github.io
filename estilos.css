@@ -27,7 +27,7 @@ p{
 }
 header{
     display: flex;
-    background-color: #000000;
+    background-color: #000000DD;
     justify-content: space-between;
     align-items: center;
     position: fixed;
