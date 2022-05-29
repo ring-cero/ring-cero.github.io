@@ -66,6 +66,7 @@
             <h2>Encriptación híbrida</h2>
             <article>
                 <p>
+                    <img src="hibrida.png" alt="">
                     Una propuesta para reunir lo mejor de ambos métodos es la encriptación híbrida. En este método, cuando Ornstein va a enviarle un mensaje a Smough, lo primero que hace es generar una llave simétrica para cifrar su mensaje. Una vez que ha cifrado el mensaje usando la llave simétrica, encripta esta llave que ha generado usando la llave pública de Smough. Una vez hecho esto, le envía a Smough el mensaje y la llave simétrica, ambos encriptados. Cuando Smough los reciba, primero usará su llave privada para desencriptar la llave simétrica para, a continuación, descifrar el mensaje con la llave simétrica. Este método permite aprovechar la seguridad de la criptografía asimétrica y la ligereza y rapidez de la encriptación simétrica.
                 </p>
             </article>
@@ -80,16 +81,18 @@
             </article>
             <article>
                 <p>
+                    <img src="enigma-3-rotores.png" alt="">
                     Y, ¿cómo descifraban el mensaje? Pues conociendo las conexiones exactas del panel de letras y la posición de los tres rotores, los cuales eran además intercambiables entre sí. La configuración de la máquina estaba planificada para cada día, y además cada mes se alteraban las posiciones de los rotores. Gracias a esto, existían 158 962 555 217 826 distintas combinaciones del alfabeto. ¿Cuál fue el fallo del ejército alemán? La estupidez humana, ya que empezaron a ser erráticos en las claves que usaban para cada día, repitiendo patrones en muchas y ocasiones, además de que terminaban todos sus mensajes con la misma frase, ‘Heil Hitler!’ Gracias a esto, los aliados, encabezados por Alan Turing, consiguieron romper el mecanismo de Enigma. 
                 </p>
             </article>
         </section>
     </main>
     <footer>
+        <h2>Bibliografía y sitios consultados</h2>
         <ul>
-            <li>https://infoactualidad.ucm.es/index.php/nosotros/2-uncategorised/638-descifrando-enigma-por-que-alemania-perdio-la-segunda-guerra-mundial</li>
-            <li>https://www.redeszone.net/tutoriales/seguridad/diferencias-cifrado-clave-publica-privada/</li>
-            <li></li>
+            <li>1. Fallos en Enigma - https://infoactualidad.ucm.es/index.php/nosotros/2-uncategorised/638-descifrando-enigma-por-que-alemania-perdio-la-segunda-guerra-mundial</li>
+            <li>2. Llave pública y privada - https://www.redeszone.net/tutoriales/seguridad/diferencias-cifrado-clave-publica-privada/</li>
+            <li>3. Funcionamiento de Enigma - https://www.youtube.com/watch?v=aI7Qrr2OBuA&t=380s</li>
         </ul>
     </footer>
 </body>
