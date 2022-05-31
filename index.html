@@ -38,7 +38,7 @@
             <article>
                 <p>
                     <img src="publica.png" alt="">
-                    La encriptación simétrica se basa en la idea de que tanto el emisor como el receptor usan la misma clave o llave, la cuál sirve tanto para cifrar como para descifrar el mensaje. Esta llave estará compartida entre los dos participantes, por el emisor para cifrar la información y por el receptor para descifrarla. Este tipo de encriptación es más rápido que la encriptación asimétrica, de ahí que se use para cifrar grandes cantidades de datos. Sin embargo, este modelo presenta un gran problema: ya que las dos partes deben compartir la misma llave, en el caso de que los participantes se encuentren en lugares muy distantes, tendrían que compartir la llave por la red, de modo que ésta podría ser interceptada por un atacante y a tomar por culo el cifrado. Para solucionar esta problemática surge la encriptación asimétrica.
+                    La encriptación simétrica se basa en la idea de que tanto el emisor como el receptor usan la misma clave o llave, la cual sirve tanto para cifrar como para descifrar el mensaje. Esta llave estará compartida entre los dos participantes, por el emisor para cifrar la información y por el receptor para descifrarla. Este tipo de encriptación es más rápida que la encriptación asimétrica, de ahí que se use para cifrar grandes cantidades de datos. Sin embargo, este modelo presenta un gran problema: ya que las dos partes deben compartir la misma llave, en el caso de que los participantes se encuentren en lugares muy distantes, tendrían que compartir la llave por la red, de modo que ésta podría ser interceptada por un atacante y a tomar por culo el cifrado. Para solucionar esta problemática surge la encriptación asimétrica.
 
                 </p>
             </article>
@@ -47,7 +47,7 @@
             <h2>Encriptación asimétrica</h2>
             <article>
                 <p>
-                    En una comunicación entre dos sujetos, ambos tienen sus llaves pública y privada. Si el sujeto 1, llamémosle Ornstein, quiere enviar un mensaje al sujeto 2, llamémosle Smough, lo primero que debe hacer Smough es mandar su llave pública a Ornstein. Una vez Ornstein tenga la llave pública de Smough, la usará para encriptar la información que vaya a enviar. Una vez encriptada, se la enviará a Smough, quien usará su llave privada (recordemos que esta NO se comparte) para desencriptar la información. Como vemos, aunque un atacante pudiera interceptar de primeras la llave pública, no le serviría de nada, puesto que la única manera de desencriptar un documento es usando la llave privada que va a asociada a la llave pública con la que se encriptó. Este es el primer uso de la encriptación asimétrica, cifrar la información. Sin embargo, encontramos un segundo uso; asegurar la integridad y procedencia de los datos.
+                    En una comunicación entre dos sujetos, ambos tienen sus llaves pública y privada. Si el sujeto 1, llamémosle Ornstein, quiere enviar un mensaje al sujeto 2, llamémosle Smough, lo primero que deben hacer ambos es intercambiar sus llaves públicas. Una vez Ornstein tenga la llave pública de Smough, la usará para encriptar la información que vaya a enviar. Una vez encriptada, se la enviará a Smough, quien usará su llave privada (recordemos que esta NO se comparte) para desencriptar la información. Como vemos, aunque un atacante pudiera interceptar de primeras la llave pública, no le serviría de nada, puesto que la única manera de desencriptar un documento es usando la llave privada que va a asociada a la llave pública con la que se encriptó. De igual forma, aunque interceptara el mensaje cifrado y la llave pública, seguiría sin servirle de nada. Este es el primer uso de la encriptación asimétrica, cifrar la información. Sin embargo, encontramos un segundo uso: asegurar la integridad y procedencia de los datos.
                 </p>
             </article>
             <article>
@@ -58,7 +58,7 @@
             </article>
             <article>
                 <p>
-                    La encriptación asimétrica, a pesar de ser más segura que la simétrica, es mucho más lenta a la hora de cifrar los mensajes, además de generar llaves y mensajes cifrados mucho más pesados, por lo que puede no ser ideal para conjuntos de datos muy pesados.
+                    La encriptación asimétrica, a pesar de ser más segura que la simétrica, es mucho más lenta a la hora de cifrar los mensajes, además de generar llaves y mensajes cifrados más pesados, por lo que puede no ser ideal para conjuntos de datos muy pesados.
                 </p>
             </article>
         </section>
@@ -76,7 +76,14 @@
             <article>
                 <p>
                     <img src="enigma.jpeg" alt="">
-                    La máquina Enigma, usada por el ejército nazi para cifrar sus mensajes, es un claro ejemplo de encriptación simétrica. El aspecto de esta máquina era muy similar al de una máquina de escribir, añadiendo al teclado un panel con bombillas para cada letra y tres rotores. Cada vez que se pulsa una letra del teclado, sale de este una señal electromagnética cuyo recorrido es el siguiente: primero, pasa por un panel de conexiones en el cual se unen pares de letras con un cable, pudiendo formar 10 pares en total. Si por ejemplo pulsamos la E y la E está conectada con la M, el primer cifrado sería pasar de E a M. A continuación, la señal viajaría hasta los 3 rotores. En cada uno de estos, que cuentan con 26 letras por cada cara, se producirían dos cambios, uno al entrar y otro al salir. Al salir del tercer rotor, la señal entra a un reflector que genera otros dos cambios antes de hacer el mismo camino a la inversa hasta llegar al panel de bombillas que iluminará la letra resultante del cifrado. En total se producen 15 cambios desde que pulsamos una letra del teclado. El mensaje cifrado resultante es el que los generales nazis comunicaban por medio de radio para informar de ataques o de posiciones estratégicas relevantes. 
+                    La máquina Enigma, usada por el ejército alemán durante la II G.M. para cifrar sus mensajes, es un claro ejemplo de encriptación simétrica. El aspecto de esta máquina era muy similar al de una máquina de escribir, añadiendo al teclado un panel con bombillas para cada letra y tres rotores, además de un panel inferior de conexiones. Cada vez que se pulsa una letra del teclado, sale de este una señal electromagnética cuyo recorrido es el siguiente: primero, pasa por el panel de conexiones en el cual se unen pares de letras con un cable, pudiendo formar 10 pares en total. Si por ejemplo pulsamos la E y la E está conectada con la M, el primer cifrado sería pasar de E a M. A continuación, la señal viajaría hasta los 3 rotores. En cada uno de estos, que cuentan con 26 letras por cada cara, se producirían dos cambios, uno al entrar y otro al salir. Al salir del tercer rotor, la señal entra a un reflector que genera otros dos cambios antes de hacer el mismo camino a la inversa hasta llegar al panel de bombillas que iluminará la letra resultante del cifrado. En total se producen 15 cambios desde que pulsamos una letra del teclado. El mensaje cifrado resultante es el que los generales nazis comunicaban por medio de radio para informar de ataques o de posiciones estratégicas relevantes. 
+                </p>
+            </article>
+            <article>
+                <p>
+                    <img src="rotores.png" alt="">
+                    Una característica que añadía seguridad extra a todo este proceso reside en los rotores. Lo primero a tener en cuenta es que, cada vez que se introducía una letra, el primer rotor giraba una vez. Cuando este rotor giraba las 26 veces, el segundo rotor giraba una vez. Cuando el segundo rotor hubiera completado 26 giros, el tercer rotor giraría una vez. El funcionamiento es exactamente el mismo que el de un reloj con las manecillas y el recorrido de horas, minutos y segundos. Además, conforme avanzó la guerra, los alemanes incluyeron dos rotores más (IV y V), que podían intercambiarse con alguno de los otros tres (I,II y III),
+                    dificultando así las posibles configuraciones diarias.
                 </p>
             </article>
             <article>
